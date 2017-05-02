@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>
+            Hacking Game
+        </title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <header>
+            <menu>
+                <ul>
+                    <li><a href="Install.html" id="install_link">Installation and Setup</a></li>
+                    <li><a href="index.html" id="rules_link">Rules/About</a></li>
+                    <li><a href="level1.html" id="challege_link">Level 1</a></li>
+                    <li><a href="level2.html" id="challege_link">Level 2</a></li>
+                    <li><a href="level3.html" id="challege_link">Level 3</a></li>
+                    <li><a href="level4.html" id="challege_link">Level 4</a></li>
+                </ul>  
+            </menu>
+        </header>
+        <main>
+            <div id="levels">
+                    <div>
+                        <h4>Level One (scanning)</h4>
+                        <div id="levelOneContent">
+                            <div>
+                                <h5>Part 1</h5>
+                                <p>We know there is a computer node out there somewhere! Find its IP by scanning!</p>
+                                <p><a href="#" id="hintLink">Hint</a> | <a href="#">Answers</a></p>
+                                <p id="l1p1Hint" class="hint">Look up namp scanning!</p>
+                                <p id="l1p1ans" class="ans">Answers go here</p>
+                                <label>Ip Address:</label><input type="text" id="l1p1input"><br>
+                            </div>
+                            <div>
+                                <h5>Part 2</h5>
+                                <p>That node is running something valuable and I heard their security department is slacking on the job! Find what ports these services are running on!</p>
+                                    <label>Port for Mysql</label><input type="text" id="l1p2Q1input"><br>
+                                    <label>Port for Ftp:</label><input type="text" id="l1p2Q2input"><br>
+                                <p><a href="#">Answers</a></p>
+                                <p id="levelOneP1Ans" class="ans">Answers go here</p>
+                            </div>
+                            <div>
+                                <h5>Part 3</h5>
+                                <p>That node is running something valuable and I heard their security department is slacking on the job! Find what service versions this machine is running!</p>
+                                    <label>Version for Mysql:</label><input type="text" id="l1p3Q1input"><br>
+                                    <label>Version for SSH:</label><input type="text" id="l1p3Q2input"><br>
+                                <p><a href="#">Answers</a></p>
+                                <p id="levelOneP1Ans" class="ans">Answers go here</p>
+                            </div>
+                        </div>
+                  </div>
+            </div>
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
+</html>
