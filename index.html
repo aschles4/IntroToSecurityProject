@@ -12,11 +12,55 @@
                 <ul>
                     <li>
                         <h3>Install Virtual Box</h3>
-                        <p>Instructions here</p>
+                        <ul>
+                            <li><p>Download: <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank"> virtualbox.org</a></p></li>
+                            <li><p>Download from the above link and Install by double clicking the installer. Follow all on screen instructions.</p></li>
+                        </ul>
+                        
                     </li>
                     <li>
                         <h3>Intall Kali Linux Virtual Machine</h3>
-                        <p>Instructions here</p>
+                        <ul>
+                            <li><p>Download: <a href="https://www.kali.org/downloads/" target="_blank"> Kali.org</a></p></li>
+                            <li><p>Download from the above link make sure that you choose the "ISO” file with the current system that you run (32bit/64bit). This file will take some time due to being 2.6 GB. Extract the file to your desktop or chosen location.</p></li>
+                            <li> In Virtual Box:
+                                <ul>
+                                    <li>Select the “New” button at the top of the tool bar</li>
+                                    <li>Enter a name for your operating system. Recommended “Kali Linux 2.0”</li>
+                                    <li>Set the type to “Linux”</li>
+                                    <li>Set the Version to: “Other Linux (64-bit)"</li>
+                                    <li>Click Next</li>
+                                    <li>Set the Memory Size to a Min 1024 MB. Recommended 2048 MB</li>
+                                    <li>Click Next</li>
+                                    <li>Create the Virtual Hard Drive by selecting “Create a virtual hard drive now” and clicking “Create”</li>
+                                    <li>Then Select “VDI (Virtual Box Disk Image)” and click next</li>
+                                    <li>Select “Dynamically allocated” and then click next</li>
+                                    <li>Set the “File Location and size” to a minimum of 10 GB and let virtual box store the virtual drive in the default position. Then click Create</li>
+                                    <li>Highlight Kali in virtual box and press start</li>
+                                    <li>Virtual Box should have a dialogue asking for where the Kali virtual ISO</li>
+                                    <li>The virtual box should start booting Choose Graphical install</li>
+                                    <li>Choose your language</li>
+                                    <li>Choose your Country</li>
+                                    <li>Chose Keyboard layout</li>
+                                    <li>Hostname for system: kali</li>
+                                    <li>Leave domain name blank</li>
+                                    <li>Password: toor</li>
+                                    <li>Configure the clock</li>
+                                    <li>Partition Disk: Guided – use entire disk</li>
+                                    <li>Partition disks: chose the only disk</li>
+                                    <li>Partition Disks: All files in one partition</li>
+                                    <li>Partition Disks: Finish partitioning and write changes to disk</li>
+                                    <li>Partition Disks: yes</li>
+                                    <li>Configure the package manager: yes</li>
+                                    <li>Configure the package manager: blank</li>
+                                    <li>Install the GRUB boot loader on a hard disk: yes</li>
+                                    <li>Finish the install</li>
+                                    <li>Boot kali Linux </li>
+                                    <li>User: root</li>
+                                    <li>Password: toor</li>
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <h3>Install Metasploitable 2 Virtual Machine</h3>
@@ -24,11 +68,12 @@
                     </li>
                     <li>
                         <h3>Setting up a secure network connection</h3>
-                        <p>Instructions here</p>
+                        <p>To setup the internal network to only allow both of our virtual machines to run correctly we need to create a virtual dhcp server to accomplish this. The way we do this is to launch CMD in windows from the virtual box program files by press “SHIFT + right-click” then running the command below.</p>
+                        <p>vboxmanage dhcpserver add --netname intnet --ip 192.168.1.101 --netmask 255.255.0.0 --lowerip 192.168.1.101 --upperip 192.168.1.254 --enable</p>
                     </li>
                     <li>
                         <h3>All Good!</h3>
-                        <p>Instructions here</p>
+                        <p>Everything is now set up and you can now start using you pentesting lab to its full extent! We have a game to challenge your skills below! Don’t worry they are kind of easy and we do encourage using google before hitting the hint button!</p>
                     </li>
                 </ul>
             </div>
