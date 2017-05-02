@@ -22,9 +22,41 @@
         </header>
         <main>
             <div id="levels">
-                    <div id="levelTwoContent">
-                        <h4>Level Two (XSS)</h4>
-                    </div>
+                    <h4>Level Two (XSS)</h4>
+                        <div>
+                            <p>For these next two levels, we will be using the DVWA functionality within Metasploitable2. To open it, open your web browser in Kali and type in the IP address of the Metasploitable VM. Then click the DVWA link on the page.</p>
+                            <h5>Part 1</h5>
+                            
+                            
+                            <p>This will be a Stored XSS attack. Try posting a comment that creates a pop-up with the message "Your Security Sucks!" every time the page is loaded.</p>
+                              <label>Code Entered:</label><input type="text" id="l2p1Q1input"><a href="#" class="answerCheck" data-input="l2p1Q1input">Check</a><br>
+                            <p><a href="#" class="hintLink" data-hintID="hint1">Hint</a> | <a href="#" class="ansLink" data-ansID="ans1">Answers</a></p>
+                            <p id="hint1" class="hint">You need to enter some JavaScript code to accomplish this task.
+                            What JavaScript functions create a pop-up window? For a good list of functions in Javascript, visit: https://www.w3schools.com/jsref/obj_window.asp</p>
+                            <p id="ans1" class="ans">Answer: script alert("Your Security Sucks!") /script </p>
+                        </div>
+                        <div>
+                            <h5>Part 2</h5>
+                            <p>This will be a Reflected XSS attack. Make the page load a pop-up that says "Hello World!"</p>
+                            <label>Where is the code being entered? (One word answer):</label><input type="text" id="l2p2Q1input"><a href="#" class="answerCheck" data-input="l2p2Q1input">Check</a><br>
+                            <label>What is the vulnerable variable?:</label><input type="text" id="l2p2Q2input"><a href="#" class="answerCheck" data-input="l2p2Q2input">Check</a><br>
+                            <label>Code Entered:</label><input type="text" id="l2p2Q3input"><a href="#" class="answerCheck" data-input="l2p2Q3input">Check</a><br>
+                        </div>
+                            <p><a href="#" class="hintLink" data-hintID="hint2">Hint</a> | <a href="#" class="ansLink" data-ansID="ans2">Answers</a></p>
+                            <p id="hint2" class="hint">When you enter a name, what changes? Take a look at the URL</p>
+                            <p id="ans2" class="ans">Answer: URL |
+name | script alert("Hello World!") /script
+</p>
+                        <div>
+                            <h5>Part 3</h5>
+                            <p>Now for this part, go back to the Stored XSS page in DVWA. This Exercise requires you to display your cookie data for the session on the screen.</p>
+                            <label>Code Entered:</label><input type="text" id="l2p3Q1input"><a href="#" class="answerCheck" data-input="l2p3Q1input">Check</a><br>
+                            <label>What did the pop-up say the security level was?:</label><input type="text" id="l2p3Q2input"><a href="#" class="answerCheck" data-input="l2p3Q2input">Check</a><br>
+                            <p><a href="#" class="hintLink" data-hintID="hint3">Hint</a> | <a href="#" class="ansLink" data-ansID="ans3">Answers</a></p>
+                            <p id="hint3" class="hint">Your solution will look similar to the one used in part 2 of this level. What code would be used to get cookie data? Use this site as a reference for what you need to do: https://www.w3schools.com/js/js_cookies.asp</p>
+                            <p id="ans3" class="ans">Answer: Low | script alert(document.cookie) /script
+</p>
+                        </div>
             </div>
         </main>
         <footer>

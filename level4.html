@@ -5,6 +5,7 @@
         </title>
         <link rel="stylesheet" type="text/css" href="index.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="index.js"></script>
     </head>
     <body>
         <header>
@@ -24,22 +25,22 @@
                     <div id="levelFourContent">
                         <h4>Level Four (Password cracking)</h4>
                             <p>Download the following text files that contain password hashes stolen from the corporation and break the hashes!</p>
-                            <p><a href="#">Hint</a> | <a href="#">Answers</a></p>
-                            <p id="levelFourHint" class="hint">Look up cracking passwords with john the ripper!</p>
-                            <p id="levelFourAns" class="ans">Answers go here</p>
+                            <p><a href="#" class="hintLink" data-hintID="hint1">Hint</a> | <a href="#" class="ansLink" data-ansID="ans1">Answers</a></p>
+                            <p id="hint1" class="hint">Look up cracking passwords with john the ripper!</p>
+                            <p id="ans1" class="ans">Part 1: password1 | december29 | babygirl20 | using MD5 Hashing Alg. <br>Part2: AUGUST | moneymoney | iloveyouforever | using SHA256 Hashing Alg.</p>
                         <div>
                             <h4>Part 1</h4>
                             <lable>Password File:</lable><a href="level4_part1.txt" download>Part 1</a><br>
-                                <label>Password 1:</label><input type="text" id="#l4p1Q1input"><br>
-                                <label>Password 2:</label><input type="text" id="#l4p1Q2input"><br>
-                                <label>Password 3:</label><input type="text" id="#l4p1Q3input"><br>
+                                <label>Password 1:</label><input type="text" id="l4p1Q1input"><a href="#" class="answerCheck" data-input="l4p1Q1input">Check</a><br>
+                                <label>Password 2:</label><input type="text" id="l4p1Q2input"><a href="#" class="answerCheck" data-input="l4p1Q2input">Check</a><br>
+                                <label>Password 3:</label><input type="text" id="l4p1Q3input"><a href="#" class="answerCheck" data-input="l4p1Q3input">Check</a><br>
                         </div>
                         <div>
                             <h4>Part 2</h4>
                                 <lable>Password File:</lable><a href="level4_part2.txt" download>Part 2</a><br>
-                                <label>Password 1:</label><input type="text" id="#l4p2Q1input"><br>
-                                <label>Password 2:</label><input type="text" id="#l4p2Q2input"><br>
-                                <label>Password 3:</label><input type="text" id="#l4p2Q3input"><br>
+                                <label>Password 1:</label><input type="text" id="l4p2Q1input"><a href="#" class="answerCheck" data-input="l4p2Q1input">Check</a><br>
+                                <label>Password 2:</label><input type="text" id="l4p2Q2input"><a href="#" class="answerCheck" data-input="l4p2Q2input">Check</a><br>
+                                <label>Password 3:</label><input type="text" id="l4p2Q3input"><a href="#" class="answerCheck" data-input="l4p2Q3input">Check</a><br>
                         </div>
                     </div>                   
             </div>
@@ -47,5 +48,6 @@
         <footer>
             
         </footer>
+        
     </body>
 </html>

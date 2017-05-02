@@ -1,7 +1,3 @@
 Password1*:55ba9925b4d22bc82cea49b9089e58a4e8baf5873bd73baedd8eefa1d4884bd6
 Password2*:e61c926d5feb3b8d4de477220d7cf9f6b29f0057c8def6983975e31850d825b1
 Password3*:d47ba687de83f62b36105bf2e72f45607083b2b180052ab9b2144f8a150be948
-
-ans:AUGUST
-ans:moneymoney
-ans:iloveyouforever

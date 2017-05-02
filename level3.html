@@ -22,9 +22,39 @@
         </header>
         <main>
             <div id="levels">   
-                    <div id="levelThreeContent">
-                        <h4>Level Three (SQl Injection)</h4>
-                    </div>
+                     <h4>Level Three (SQl Injection)</h4>
+                        <div>
+                            In DVWA, go to the SQL injection section on the website.
+                            
+                            <h5>Part 1</h5>
+                            <P>Get the page to display all of the users in the database.</P>
+                            <label>What is the name of the third person in the database?:</label><input type="text" id="l3p1q1input"><a href="#" class="answerCheck" data-input="l3p1q1input">Check</a><br>
+                            <label>Code Entered:</label><input type="text" id="l3p1q2input"><a href="#" class="answerCheck" data-input="l3p1q2input">Check</a><br>
+                            <p><a href="#" class="hintLink" data-hintID="hint1">Hint</a> | <a href="#" class="ansLink" data-ansID="ans1">Answers</a></p>
+                            <p id="hint1" class="hint">You need to use a conditional statement (AND, OR, ect.) that will make the database display all users. Use 1=1 as the second part of the statement in the textbox. You must also include a ' after the first number and a # at the end in order for SQL to recognize it as a command</p>
+                            <p id="ans1" class="ans">Answers: Hack Me ;;; | 1' OR 1=1#</p>
+                            
+                            <h5>Part 2</h5>
+                            
+                            <p>For this part, I want you to tell me what the name of the database is, and what the name of the Users column is in the databse</p>
+                            <label>Code Entered:</label><input type="text" id="l3p2q1input"><a href="#" class="answerCheck" data-input="l3p2q1input">Check</a><br>
+                            <label>Name of Database:</label><input type="text" id="l3p2q2input"><a href="#" class="answerCheck" data-input="l3p2q2input">Check</a><br>
+                            <label>Name of User Column:</label><input type="text" id="l3p2q3input"><a href="#" class="answerCheck" data-input="l3p2q3input">Check</a><br>
+                            
+                            <p><a href="#" class="hintLink" data-hintID="hint2">Hint</a> | <a href="#" class="ansLink" data-ansID="ans2">Answers</a></p>
+                            <p id="hint2" class="hint">This is all done as one statement. Don't forget the # at the end of it. The first part of the statement is the code used for the previous question. When asking for the database and the user column, they must be written like a function would (e.g. foo()). You will need the SELECT and UNION keywords to complete this task.</p>
+                            <p id="ans2" class="ans">Answers: 1' OR 1=1 union select database(), user()# | dvwa  | root@localhost</p>
+                            
+                            <h5>Part 3</h5>
+                            
+                            
+                            <p>Now, I want you to find the version number of the database DVWA is using. When doing so, make sure the first parameter for the SELECT statement is the same as Part 2</p>
+                            <label>Code Entered:</label><input type="text" id="l3p3q1input"><a href="#" class="answerCheck" data-input="l3p3q1input">Check</a><br>
+                            <label>Version Number (Include everything listed):</label><input type="text" id="l3p3q2input"><a href="#" class="answerCheck" data-input="l3p3q2input">Check</a><br>
+                            <p><a href="#" class="hintLink" data-hintID="hint3">Hint</a> | <a href="#" class="ansLink" data-ansID="ans3">Answers</a></p>
+                            <p id="hint3" class="hint">You only need to change the last parameter of the last answer. Much like Part 2, you will need to ask for the version in the form of a function.</p>
+                            <p id="ans3" class="ans">Answer: 1' OR 1=1 union select database(), version()# | 5.0.51a-3unbuntu5</p>
+                        </div>
             </div>
         </main>
         <footer>

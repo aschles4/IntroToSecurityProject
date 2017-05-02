@@ -22,35 +22,33 @@
         </header>
         <main>
             <div id="levels">
-                    <div>
                         <h4>Level One (scanning)</h4>
                         <div id="levelOneContent">
                             <div>
                                 <h5>Part 1</h5>
                                 <p>We know there is a computer node out there somewhere! Find its IP by scanning!</p>
-                                <p><a href="#" id="hintLink">Hint</a> | <a href="#">Answers</a></p>
-                                <p id="l1p1Hint" class="hint">Look up namp scanning!</p>
-                                <p id="l1p1ans" class="ans">Answers go here</p>
-                                <label>Ip Address:</label><input type="text" id="l1p1input"><br>
+                                <p><a href="#" class="hintLink" data-hintID="hint1">Hint</a> | <a href="#" class="ansLink" data-ansID="ans1">Answers</a></p>
+                                <p id="hint1" class="hint">Look up namp scanning!</p>
+                                <p id="ans1" class="ans">192.168.1.101</p>
+                                <label>Ip Address:</label><input type="text" id="l1p1input"><a href="#" class="answerCheck" data-input="l1p1input">Check</a><br>
                             </div>
                             <div>
                                 <h5>Part 2</h5>
                                 <p>That node is running something valuable and I heard their security department is slacking on the job! Find what ports these services are running on!</p>
-                                    <label>Port for Mysql</label><input type="text" id="l1p2Q1input"><br>
-                                    <label>Port for Ftp:</label><input type="text" id="l1p2Q2input"><br>
-                                <p><a href="#">Answers</a></p>
-                                <p id="levelOneP1Ans" class="ans">Answers go here</p>
+                                    <label>Port for Mysql</label><input type="text" id="l1p2Q1input"><a href="#" class="answerCheck" data-input="l1p2Q1input">Check</a><br>
+                                    <label>Port for Ftp:</label><input type="text" id="l1p2Q2input"><a href="#" class="answerCheck" data-input="l1p2Q2input">Check</a><br>
+                                <p><a href="#" class="ansLink" data-ansID="ans2">Answers</a></p>
+                                <p id="ans2" class="ans">Answers go here</p>
                             </div>
                             <div>
                                 <h5>Part 3</h5>
                                 <p>That node is running something valuable and I heard their security department is slacking on the job! Find what service versions this machine is running!</p>
-                                    <label>Version for Mysql:</label><input type="text" id="l1p3Q1input"><br>
-                                    <label>Version for SSH:</label><input type="text" id="l1p3Q2input"><br>
-                                <p><a href="#">Answers</a></p>
-                                <p id="levelOneP1Ans" class="ans">Answers go here</p>
+                                    <label>Version for Mysql:</label><input type="text" id="l1p3Q1input"><a href="#" class="answerCheck" data-input="l1p3Q1input">Check</a><br>
+                                    <label>Version for SSH:</label><input type="text" id="l1p3Q2input"><a href="#" class="answerCheck" data-input="l1p3Q1input">Check</a><br>
+                                <p><a href="#" class="ansLink" data-ansID="ans3">Answers</a></p>
+                                <p id="ans3" class="ans">Answers go here</p>
                             </div>
-                        </div>
-                  </div>
+                         </div>
             </div>
         </main>
         <footer>
