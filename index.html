@@ -64,7 +64,20 @@
                     </li>
                     <li>
                         <h3>Install Metasploitable 2 Virtual Machine</h3>
-                        <p>Instructions here</p>
+                            <p>Download and install Metasploitable 2 from <a href="https://sourceforge.net/projects/metasploitable/files/Metasploitable2/" target="_blank">here</a>
+                            Then extract the file. It is recommended you place the folder with your other virtual machines to keep your hard drive organized. <p>
+                            In Virtual Box:
+                            <ul> 
+                                    <li>Select the “New” button at the top of the tool bar</li>
+                                    <li>Enter a name for your operating system. Recommended “Metasploitable 2”</li>
+                                    <li>Set the type to “Linux”</li>
+                                    <li>Set the Version to: “Other Linux (64-bit)</li>
+                                    <li>Click Next</li>
+                                    <li>Set the Memory Size to a Min 1024 MB. Recommended 2048 MB</li>
+                                    <li>Click Next</li>
+                                    <li>Create the Virtual Hard Drive by selecting “Use an existing virtual hard drive” and find the .vmdk file in the folder you extracted earlier then click “Create”</li>
+                                    <li>Your metasploitable 2 is now bootable!</li>
+                            </ul>
                     </li>
                     <li>
                         <h3>Setting up a secure network connection</h3>
@@ -95,6 +108,25 @@
                 <ul>
                     <li>
                         <h4>Level One (scanning)</h4>
+                        <div>
+                            <h5>Part 1</h5>
+                            <p>We know there is a computer node out there somewhere! Find its IP by scanning!</p>
+                                <label>Ip Address:</label><input type="text"><br>
+                        </div>
+                        <div>
+                            <h5>Part 2</h5>
+                            <p>That node is running something valuable and I heard their security department is slacking on the job! Find what ports these services are running on!</p>
+                                <label>Port for Mysql</label><input type="text"><br>
+                                <label>Port for Ftp:</label><input type="text"><br>
+                                <label>Port for ajp13:</label><input type="text"><br>
+                        </div>
+                        <div>
+                            <h5>Part 3</h5>
+                            <p>That node is running something valuable and I heard their security department is slacking on the job! Find what service versions this machine is running!</p>
+                                <label>Version for Mysql:</label><input type="text"><br>
+                                <label>Version for SSH:</label><input type="text"><br>
+                                <label>Version for HTTP:</label><input type="text"><br>
+                        </div>
                     </li>
                     <li>
                         <h4>Level Two (XSS)</h4>
@@ -115,7 +147,6 @@
                         <div>
                             <h5>Part 2</h5>
                                 <lable>Password File:</lable><a href="level4_part2.txt" download>Part 2</a><br>
-                            
                                 <label>Password 1:</label><input type="text"><br>
                                 <label>Password 2:</label><input type="text"><br>
                                 <label>Password 3:</label><input type="text"><br>
@@ -124,11 +155,7 @@
                             <h5>Hint</h5>
                             <p>Look up cracking passwords with john the ripper!</p>
                         </div>
-                    </li>
-                    <li>
-                        <h4>Level Five (Challege)</h4>
-                    </li>
-                    
+                    </li>                   
                 </ul>
             </div>
         </main>
